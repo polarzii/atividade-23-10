@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="entregas">
+
+        <header class="topo">
+            <h1>Agenda de entregas</h1>
+        </header>
+
+        <p> provas, trabalhos e apresentações em um só lugar.</p>
+
+        <form class="formulario" id="formulario">
+        
+            <h2>Resumo</h2>
+
+            <p>Pendentes <strong id="total-pendentes">3</strong></p>
+
+            <p>Próxima entrega <strong id="proxima-entrega">Matemática — 28/10</strong></p>
+
+
+            <fieldset>
+      <legend>Nova entrega</legend>
+           
+
+            <p>
+                <label for="descricao">Matéria</label>
+                <input
+                    type="text"
+                    id="Materia"
+                    placeholder="Ex.: Matemática"
+                    required 
+                    >
+                </p>
+
+                <p>
+                <label for="categoria">Tipo</label>
+                <select id="categoria" required>
+                    <option value="escolha o tipo">Escolha o tipo</option>
+                    <option value="entregue">Entregue</option>
+                    <option value="não entregue">Não entregue</option>
+                </select>
+            </p>
+
+                <p>
+       <p>
+    <label for="date">Data</label>
+    <input type="date" id="date" name="date">
+</p>
+      <button type="submit">Adicionar</button>  
+    </fieldset>
+            </p>
+
+            
+        </form>
+
+        <section class="proximas entregas">
+
+            <p>
+                <label for="categoria">Mostrar</label>
+                <select id="categoria" required>
+                    <option value="tudo">Tudo</option>
+                    <option value="historia">História</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="matematica">Matenática</option>
+                    <option value="portugues">Português</option>
+                </select>
+            </p>
+
+<h2>Proximas Entregas</h2>
+
+            <ul>
+    <li>
+        20/10 <br>
+        <strong>Português</strong> Trabalho <br>
+        <button type="button">Reabrir</button> 
+        <button type="button">Apagar</button> 
+    </li>
+
+    <li>
+        28/10 <br>
+        <strong>Matemática</strong> Prova <br>
+        <button type="button">Feita</button> 
+        <button type="button">Apagar</button> 
+    </li>
+
+    <li>
+        30/10 <br>
+        <strong>Inglês</strong> Apresentação <br>
+        <button type="button">Feita</button> 
+        <button type="button">Apagar</button> 
+    </li>
+
+    <li>
+        04/11 <br>
+        <strong>História</strong> Trabalho <br>
+        <button type="button">Feita</button> 
+        <button type="button">Apagar</button> 
+    </li>
+</ul>
+
+<p>Feito por Kimmy</p>
+    </main>
+
+</body>
+
+</html>

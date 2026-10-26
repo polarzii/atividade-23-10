@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+
+<body>
+
+    <main class="entregas">
+
+        <header class="topo">
+            <h1> Agenda de entregas</h1>
+            <p> provas, trabalhos e apresentações em um só lugar.</p>
+        </header>
+
+        <main class="container">
+    
+    <section class="cartao-modulo resumo">
+        <h2>Resumo</h2>
+        <p>Pendentes <strong id="total-pendentes">3</strong></p>
+        <p>Próxima entrega <strong id="proxima-entrega">Matemática — 28/10</strong></p>
+    </section>
+
+
+            <section class="cartao-modulo nova-entrega">
+        <h2>Nova entrega</h2>
+           
+
+            <p>
+                <label for="descricao">Matéria</label>
+                <input
+                    type="text"
+                    id="Materia"
+                    placeholder="Ex.: Matemática"
+                    required 
+                    >
+                </p>
+
+                <p>
+                <label for="categoria">Tipo</label>
+                <select id="categoria" required>
+                    <option value="escolha o tipo">Escolha o tipo</option>
+                    <option value="entregue">Entregue</option>
+                    <option value="não entregue">Não entregue</option>
+                </select>
+            </p>
+
+                <p>
+       <p>
+    <label for="date">Data</label>
+    <input type="date" id="date" name="date">
+</p>
+      <button type="submit">Adicionar</button>  
+    </fieldset>
+            </p>
+
+            
+        </form>
+            </section>
+
+       <section class="cartao-modulo proximas-entregas">
+        <h2>Próximas entregas</h2>
+
+            <p>
+                <label for="categoria">Mostrar</label>
+                <select id="categoria" required>
+                    <option value="tudo">Tudo</option>
+                    <option value="historia">História</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                </select>
+            </p>
+
+
+
+<ul>
+    <ul>
+    
+    <li class="item-lista borda-trabalho">
+        <div>
+            <span class="data-texto">20/10</span>
+            <strong>Português</strong> 
+            <span class="tag tag-trabalho">Trabalho</span>
+        </div>
+        <div class="botoes">
+            <button type="button" class="btn-padrao">Reabrir</button> 
+            <button type="button" class="btn-padrao">Apagar</button> 
+        </div>
+    </li>
+
+    <li class="item-lista borda-prova">
+        <div>
+            <span class="data-texto">28/10</span>
+            <strong>Matemática</strong> 
+            <span class="tag tag-prova">Prova</span>
+        </div>
+        <div class="botoes">
+            <button type="button" class="btn-padrao">Feita</button> 
+            <button type="button" class="btn-padrao">Apagar</button> 
+        </div>
+    </li>
+    
+    <li class="item-lista borda-apresentacao">
+        <div>
+            <span class="data-texto">30/10</span>
+            <strong>Inglês</strong> 
+            <span class="tag tag-apresentacao">Apresentação</span>
+        </div>
+        <div class="botoes">
+            <button type="button" class="btn-padrao">Feita</button> 
+            <button type="button" class="btn-padrao">Apagar</button> 
+        </div>
+    </li>
+
+    <li class="item-lista borda-trabalho">
+        <div>
+            <span class="data-texto">04/11</span>
+            <strong>História</strong> 
+            <span class="tag tag-trabalho">Trabalho</span>
+        </div>
+        <div class="botoes">
+            <button type="button" class="btn-padrao">Feita</button> 
+            <button type="button" class="btn-padrao">Apagar</button> 
+        </div>
+    </li>
+</ul>
+
+</ul>
+       </section>
+
+
+
+<footer>
+    <p>Feito por Kimmy</p>
+</footer>
+
+</main>
+
+</body>
+
+</html>
+
+

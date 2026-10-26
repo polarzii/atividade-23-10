@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1>Agenda de entregas</h1>
+        <p>Provas, trabalhos e apresentações em um só lugar.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="cartao-modulo resumo">
+            <h2>Resumo</h2>
+            <p>Pendentes <strong id="total-pendentes">3</strong></p>
+            <p>Próxima entrega <strong id="proxima-entrega">Matemática — 28/10</strong></p>
+        </section>
+
+        <section class="cartao-modulo nova-entrega">
+            <h2>Nova entrega</h2>
+
+            <form id="form-entrega">
+                <p>
+                    <label for="Materia">Matéria</label>
+                    <input
+                        type="text"
+                        id="Materia"
+                        placeholder="Ex.: Matemática"
+                        required>
+                </p>
+
+                <p>
+                    <label for="categoria">Tipo</label>
+                    <select id="categoria" required>
+                        <option value="">Escolha o tipo</option>
+                        <option value="prova">Prova</option>
+                        <option value="trabalho">Trabalho</option>
+                        <option value="apresentacao">Apresentação</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Data</label>
+                    <input type="date" id="date" required>
+                </p>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="cartao-modulo proximas-entregas">
+            <h2>Próximas entregas</h2>
+
+            <p>
+                <label for="filtro-categoria">Mostrar</label>
+                <select id="filtro-categoria">
+                    <option value="tudo">Tudo</option>
+                    <option value="historia">História</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                </select>
+            </p>
+
+            <ul id="lista-entregas"></ul>
+        </section>
+
+        <footer>
+            <p>Feito por Kimmy</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
